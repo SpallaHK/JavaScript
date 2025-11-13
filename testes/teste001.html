@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Soma</title>
+    <link rel="stylesheet" href="style1.css">
+
+</head>
+<body>
+    <header>
+        <h1>Patin Calc</h1>
+        <p>Sua calculadora na web</p>
+    </header>
+    <main>
+        <h1 class="h">Calculadora</h1>
+        <h2>Soma</h2>
+        <input type="number" name="soma1" id="soma1"> +
+        <input type="number" name="soma2" id="soma2">
+        <input type="button" value="Somar" onclick="soma()">
+        <p id="ress">Resultado</p>
+    
+        <h2 class="h">Subtração</h2>
+        <input type="number" name="subtr1" id="subtr1"> -
+        <input type="number" name="subtr2" id="subtr2">
+        <input type="button" value="Subtrair" onclick="subtr()">
+        <p id="ressub">Resultado</p>
+    
+        <h2 class="h">Multiplicação</h2>
+        <input type="number" name="mult1" id="mult1"> x
+        <input type="number" name="mult2" id="mult2">
+        <input type="button" value="Multiplicar" onclick="mult()">
+        <p id="resmult">Resultado</p>
+    
+        <h2 class="h">Divisão</h2>
+        <input type="number" name="divs1" id="divs1"> /
+        <input type="number" name="divs2" id="divs2">
+        <input type="button" value="Dividir" onclick="divs()">
+        <p id="resdivs">Resultado</p>
+    
+        <div id="button"><p>o</p></div>
+    
+    
+        <script>
+            var soma1 = document.getElementById('soma1')
+            var soma2 = document.getElementById('soma2')
+            var subtr1 = document.getElementById('subtr1')
+            var subtr2 = document.getElementById('subtr2')
+            var mult1 = document.getElementById('mult1')
+            var mult2 = document.getElementById('mult2')
+            var divs1 = document.getElementById('divs1')
+            var divs2 = document.getElementById('divs2')
+            var button = window.document.getElementById('button')
+            const h = document.querySelector('.h')
+    
+            function soma(){
+                var s1 = Number(soma1.value)
+                var s2 = Number(soma2.value)
+                var s = s1 + s2
+                var ress = document.getElementById('ress')
+                ress.innerText = `O resultado da soma de ${s1} e ${s2} é igual a ${s}`
+            }
+    
+            function subtr(){
+                var sub1 = Number(subtr1.value)
+                var sub2 = Number(subtr2.value)
+                var sub0 = sub1 - sub2
+                var ressub = document.getElementById('ressub')
+                ressub.innerText = `O resultado da subtração de ${sub1} e ${sub2} é igual a ${sub0}`
+            }
+    
+            function mult(){
+                var mul1 = Number(mult1.value)
+                var mul2 = Number(mult2.value)
+                var mul0 = mul1 * mul2
+                var resmult = document.getElementById('resmult')
+                resmult.innerText = `O resultado da multiplicação de ${mul1} vezes ${mul2} é igual a ${mul0}`
+            }
+    
+            function divs(){
+                var div1 = Number(divs1.value)
+                var div2 = Number(divs2.value)
+                var div0 = div1 / div2
+                var resdivs = document.getElementById('resdivs')
+                resdivs.innerText = `O resultado da divisão de ${div1} por ${div2} é igual a ${div0}`
+            }
+            button.addEventListener('click', press )
+    
+            function press(){
+                ress.innerText = 'vai reprovar'
+                ressub.innerText = 'mt burro'
+                resmult.innerText = 'sabe nem matemática'
+                resdivs.innerText = 'lerdão'
+                h.innerText = 'burrão'
+                button.style.boxShadow  = 'inset 2px 2px 10px 2px black'
+            }
+    
+    
+    
+        </script>
+</main>
+
+</body>
+</html>

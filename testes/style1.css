@@ -1,0 +1,41 @@
+ body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #d5f6ff;
+        }
+        header{
+            max-width: 500px;
+            margin: auto;
+            background-color: #6169f9;
+            padding: 10px;
+            
+        }
+        header h1{
+            margin: 0px 0px 0px 0px;
+        }
+        header p{
+           margin: 0px 0px 0px 0px; 
+        }
+        main{
+            max-width: 500px;
+            margin: auto;
+            background-color: #fff;
+            padding: 10px;
+            margin-top: -1px;
+        }
+        main h1{
+            margin-top: 5px;
+        }
+        p{
+            margin: 10px;
+        }
+        div#button{
+            background-color: red;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            box-shadow: 2px 2px 10px 2px black;
+            margin: auto;
+        }
+        div#button p{
+            display: none;
+    }
