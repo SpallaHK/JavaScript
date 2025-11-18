@@ -10,13 +10,19 @@
     <p>Have you ever been curious about your <strong>nacionality</strong>? Do the test here and know if you are a Brazilian.</p>
     <p>Write the name of your country</p> 
     <input type="text" id="nacs">
-    <input type="button" value="test" onclick="Test()">
+    <input type="button" value="Test" onclick="test()">
+    <div id="res">Result:</div>
     
     <script>
         function test(){
             var nation = document.getElementById('nacs')
-            
-
+            var res = document.getElementById('res')
+            if(nation ='Brazil'){
+                res.innerHTML = 'Unfortunately, you are a Brazilian'
+            }
+            else{
+                res.innerHTML = 'Congrats, You are not a brazilian'
+            }
         }
     </script>
 </body>
