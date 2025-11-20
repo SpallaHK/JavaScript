@@ -1,5 +1,5 @@
-var país = 'brasil'
-var p = país.toLowerCase
+var país = 'Brasil'
+var p = país
 console.log(`Vivendo em ${país}`)
-if(p == 'brasil') {console.log('Você é Brasileiro!')}
-else{console.log('você é estrangeiro!')}
+if(p == 'Brasil') {console.log('Você é Brasileiro!')}
+else{console.log('Você é estrangeiro!')}

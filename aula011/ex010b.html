@@ -6,22 +6,21 @@
     <title>Know Your Nacionality</title>
 </head>
 <body>
-    <h1>KNY</h1>
-    <p>Have you ever been curious about your <strong>nacionality</strong>? Do the test here and know if you are a Brazilian.</p>
+    <h1>KYN</h1>
+    <p>Have you ever been curious about your <strong>nationality</strong>? Do the test here and know if you are a Brazilian.</p>
     <p>Write the name of your country</p> 
     <input type="text" id="nacs">
     <input type="button" value="Test" onclick="test()">
     <div id="res">Result:</div>
     
     <script>
-        function test(){
-            var nation = document.getElementById('nacs')
-            var res = document.getElementById('res')
-            if(nation ='Brazil'){
-                res.innerHTML = 'Unfortunately, you are a Brazilian'
-            }
-            else{
-                res.innerHTML = 'Congrats, You are not a brazilian'
+        function test() {
+            var nac = document.querySelector('input#nacs').value.trim().toLowerCase();
+            var res = document.querySelector('div#res');
+            if(nac==='brazil'||nac==='brasil'){
+                res.innerHTML = 'You are a Brazilian';
+            } else{
+                res.innerHTML = 'You are not a Brazilian';
             }
         }
     </script>
